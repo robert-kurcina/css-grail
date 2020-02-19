@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#BannerRegion {
+    display: flex;
+    overflow: hidden;
+    background-color: orange;
+    min-height: 100px;
+    max-height: 100px;
+    height: 100px;
+}
+
+#NavRegion {
+    display: flex;
+    overflow: hidden;
+    background-color: gray;
+    min-height: 100px;
+    max-height: 100px;
+    height: 100px;
+}
+
+#MainRegion {
+    display: flex;
+    overflow: hidden;
+    background-color: blue;
+    margin: 0;
+
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+#MainRegion div.channelSection {
+    overflow: hidden;
+    min-width: 320px;
+    overflow: auto;
+    background-color: green;
+    flex: 1 1 320px;
+}
+
+#MainRegion div.chatSection {
+    overflow: auto;
+    min-width: 320px;
+    background-color: violet;
+    flex: 1 1 320px;
+}
+
+#MainRegion div.profileSection {
+    overflow: auto;
+    max-width: 400px;
+    min-width: 320px;
+    background-color: cyan;
+    flex: 1 1 320px;
+}
+
+#FooterRegion {
+    min-height: 100px;
+    max-height: 100px;
+    height: 100px;
+    background-color: purple;
+}
